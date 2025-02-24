@@ -1,0 +1,160 @@
+body {
+  background: url('./assets/images/happy-removebg.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Content Container */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+ 
+}
+
+@media (min-width: 1024px) {
+  .content-container {
+    max-width: 700px; /* Wider layout for larger screens */
+    padding: 40px;
+  }
+}
+
+/* Logo Section */
+.logo {
+  width: 16rem;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    width: 20rem; /* Larger logo for desktop view */
+  }
+}
+
+/* Headings */
+.heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: whitesmoke;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem; /* Larger font for better readability */
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+/* Buttons */
+.login-button {
+  background-color: #be0606; /* Red */
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 30px;
+  border-radius: 9999px;
+  margin: 20px 0;
+  text-align: center;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.login-button:hover {
+  background-color: #9b0505; /* Darker red for hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+@media (min-width: 1024px) {
+  .login-button {
+    font-size: 20px;
+    padding: 12px 40px;
+  }
+}
+
+.store-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 1024px) {
+  .store-buttons {
+    flex-direction: row; /* Arrange buttons in a row for desktops */
+    justify-content: center;
+    gap: 16px; /* Increased spacing for better layout */
+    max-width: 700px;
+  }
+}
+
+.store-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* Black */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.store-button:hover {
+  background-color: #333; /* Slightly lighter black for hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+/* Support Section */
+.support-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 6px;
+  margin-top: 20px;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (min-width: 1024px) {
+  .support-section {
+    max-width: 700px;
+  }
+}
+
+.support-text {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.support-button {
+  background-color: #be0606; /* Red */
+  color: white;
+  padding: 12px 30px;
+  border-radius: 9999px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.support-button:hover {
+  background-color: #9b0505; /* Darker red for hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
